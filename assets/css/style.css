@@ -30,12 +30,15 @@ Commit 6
 Commit 7
 "Commenting out last commit and moving over to new repo as I will submit assignment like this"
 
+Commit 8
+"Issue 1 Resolved - Implementing JS fix proved to work from https://github.com/PaulB-H/Portfolio---Fixing-100vh-on-mobile"
+
 */
 
 
 body, wrapper {
-    min-height: 100vh;
-    /* min-height: calc(var(--vh, 1vh) * 100); */
+    /* min-height: 100vh; */
+    min-height: calc(var(--vh, 1vh) * 100);
     background-image: url(../images/gaming-pattern.png);
 }
 
