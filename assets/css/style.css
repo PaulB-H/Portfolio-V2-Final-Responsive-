@@ -9,6 +9,10 @@ moved notes and commits to notesNcommits.md
     padding: 0;
 }
 
+/* html {
+    min-height: calc(var(--vh, 1vh) * 100);
+} */
+
 body, wrapper {
     /* min-height: 100vh; See issue #1 fixed in commit 8*/
     min-height: calc(var(--vh, 1vh) * 100);
@@ -20,9 +24,6 @@ footer {
     font-size: 75%;
 }
 
-/* Float portfolio pic to left of text and text around it, set max width of img 
-Need to change this so pic is on line under header and Horizontal Rule next
-*/
 .portPic {
     max-width: 150px;
     float: left;
