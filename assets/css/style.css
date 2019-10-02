@@ -24,12 +24,16 @@ Commit 4
 Commit 5
 "Issue 1 - Paul - Adding min-height: -webkit-fill-available; to line 33 of style.css based on https://stackoverflow.com/a/55003985/11665872"
 
+Commit 6
+"Issue 1 - Paul - Removing change from last commit, adding a fix with JS from https://css-tricks.com/the-trick-to-viewport-units-on-mobile/ and commented out the min-height 100vh"
+
 
 */
 
 
 body, wrapper {
-    min-height: 100vh, -webkit-fill-available;
+    /* min-height: 100vh; */
+    min-height: calc(var(--vh, 1vh) * 100);
     background-image: url(../images/gaming-pattern.png);
 }
 
