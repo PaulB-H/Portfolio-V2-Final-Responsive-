@@ -68,6 +68,9 @@ commit 17
 commit 18
     "Resolved - Issue 2 - this runs the setproperty thing every time the window is resized .resize(.setProperty('--vh', `${vh}px`);, also applied smaller margin to bottom of portfolio horizontal"
 
+commit 19
+    "ignore previous commit message... issue 2 fix breaks mobile footer position, commenting fix out for now, updated bug tracker"
+
 
 ----------------------------------------------------
 Current Bugs
@@ -83,9 +86,12 @@ Issue 2
     $('span').text(x += 1);
     });
 
-    Issue 2 resolved: 
+    Issue 2 resolved NOPE SEE BELOW: 
     // this runs the setproperty thing every time the window is resized
     .resize(.setProperty('--vh', `${vh}px`);
+
+    // this broke mobile (chrome) footer display again nooooo commenting out for now
+    // .resize(.setProperty('--vh', `${vh}px`);
 ----------------------------------------------------
 Past Bugs
 ----------------------------------------------------
