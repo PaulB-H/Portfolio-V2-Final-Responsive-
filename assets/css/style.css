@@ -1,9 +1,4 @@
-/* Reset CSS */
 
-* {
-    margin: 0;
-    padding: 0;
-}
 
 /* 
 Documentation for trying to fix footer display on mobile
@@ -39,11 +34,20 @@ Commit 9
 Commit 10
 "added stylepaddingtop 0px to contact page to match portfolio"
 
+Commit 11
+"Adding favicon and link in headers of all pages, set goal for next fix above .portPic in style.css"
+
 */
 
 
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body, wrapper {
-    /* min-height: 100vh; */
+    /* min-height: 100vh; See issue #1 fixed in commit 8*/
     min-height: calc(var(--vh, 1vh) * 100);
     background-image: url(../images/gaming-pattern.png);
 }
@@ -53,8 +57,9 @@ footer {
     font-size: 75%;
 }
 
-/* Float portfolio pic to left of text and text around it, set max width of img */
-
+/* Float portfolio pic to left of text and text around it, set max width of img 
+Need to change this so pic is on line under header and Horizontal Rule next
+*/
 .portPic {
     max-width: 150px;
     float: left;
