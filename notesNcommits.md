@@ -49,3 +49,6 @@ NOTE:
 
 commit 12
     "moved notes and commit comments from styles.css to notesNcommits.md, deleted unused images"
+
+commit 13
+    "removed more unused images"
