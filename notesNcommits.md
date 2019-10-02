@@ -59,6 +59,11 @@ commit 14
 commit 15
     "Issue 2 - discovered root cause - script to determine max vh and thereby the footer location only runs when page is generated, perhaps can find a way to call also when page is resized, also made my current/past bugs section nice"
 
+commit 16
+    "moved bio image under bio header, forced off padding from card body style, noticed portfolio header centers with page when page is wide enough, but left when its not, want to apply this to other pages, will try text-center and text-lg-left"
+
+
+
 
 ----------------------------------------------------
 Current Bugs
@@ -73,3 +78,5 @@ Past Bugs
 Issue 1
     Due to webkit browsers considering vh100 to pretend URL bar does not exist, had to use script to generate vh since sticky footer and page layout is dependant on fluid containers set with min-height=100vh
 ----------------------------------------------------
+
+maybe text-center text-lg-left for h1
