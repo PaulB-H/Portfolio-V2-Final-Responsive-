@@ -62,7 +62,11 @@ commit 15
 commit 16
     "moved bio image under bio header, forced off padding from card body style, noticed portfolio header centers with page when page is wide enough, but left when its not, want to apply this to other pages, will try text-center and text-lg-left"
 
+commit 17
+    "text-center text-lg-left for the h1 elements gave me desired effect, applying to all pages"
 
+commit 18
+    "Resolved - Issue 2 - this runs the setproperty thing every time the window is resized .resize(.setProperty('--vh', `${vh}px`);, also applied smaller margin to bottom of portfolio horizontal"
 
 
 ----------------------------------------------------
@@ -72,6 +76,16 @@ Issue 2
     due to JS vh calculation script, when adjusting page size footer can position incorrectly
 
     discovered root cause - script to determine max vh and thereby the footer location only runs when page is generated, perhaps can find a way to call also when page is resized
+
+    Code to fix that
+    https://www.w3schools.com/jquery/event_resize.asp
+    .resize(function(){
+    $('span').text(x += 1);
+    });
+
+    Issue 2 resolved: 
+    // this runs the setproperty thing every time the window is resized
+    .resize(.setProperty('--vh', `${vh}px`);
 ----------------------------------------------------
 Past Bugs
 ----------------------------------------------------
@@ -79,4 +93,4 @@ Issue 1
     Due to webkit browsers considering vh100 to pretend URL bar does not exist, had to use script to generate vh since sticky footer and page layout is dependant on fluid containers set with min-height=100vh
 ----------------------------------------------------
 
-maybe text-center text-lg-left for h1
+maybe 
