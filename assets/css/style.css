@@ -8,9 +8,13 @@
 /* 
 Documentation for trying to fix footer display on mobile
 
-Issue: On mobile the footer is pushed off the page the aprox height of the navbar OR the browser / phone control bar at bottom of screen.
+Issue #1: On mobile the footer is pushed off the page the aprox height of the navbar OR the browser / phone control bar at bottom of screen.
 
-Oct 1 - Paul - Added float-right to line 92 of index.html
+Issue 1 - Oct 1 / Paul / Added float-right to line 92 of index.html
+
+Issue 1 - Oct 1 / Paul / 
+Removed float-right line 92 of index.html
+Removed d-flex class from line 28 of index.html since the parent container is already set to d-flex
 
 */
 
