@@ -52,3 +52,14 @@ commit 12
 
 commit 13
     "removed more unused images"
+
+commit 14
+    "Documented footer position bug due to vh calculation script, created current / past issues section in notesNcommits"
+
+
+
+Current Bugs
+    due to JS vh calculation script, when adjusting page size footer can position incorrectly
+
+Past Bugs
+    Due to webkit browsers considering vh100 to pretend URL bar does not exist, had to use script to generate vh since sticky footer and page layout is dependant on fluid containers set with min-height=100vh
