@@ -56,10 +56,20 @@ commit 13
 commit 14
     "Documented footer position bug due to vh calculation script, created current / past issues section in notesNcommits"
 
+commit 15
+    "Issue 2 - discovered root cause - script to determine max vh and thereby the footer location only runs when page is generated, perhaps can find a way to call also when page is resized, also made my current/past bugs section nice"
 
 
+----------------------------------------------------
 Current Bugs
+----------------------------------------------------
+Issue 2
     due to JS vh calculation script, when adjusting page size footer can position incorrectly
 
+    discovered root cause - script to determine max vh and thereby the footer location only runs when page is generated, perhaps can find a way to call also when page is resized
+----------------------------------------------------
 Past Bugs
+----------------------------------------------------
+Issue 1
     Due to webkit browsers considering vh100 to pretend URL bar does not exist, had to use script to generate vh since sticky footer and page layout is dependant on fluid containers set with min-height=100vh
+----------------------------------------------------
