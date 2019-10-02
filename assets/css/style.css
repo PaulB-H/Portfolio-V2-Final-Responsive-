@@ -12,9 +12,16 @@ Issue #1: On mobile the footer is pushed off the page the aprox height of the na
 
 Issue 1 - Oct 1 / Paul / Added float-right to line 92 of index.html
 
-Issue 1 - Oct 1 / Paul / 
-Removed float-right line 92 of index.html
-Removed d-flex class from line 28 of index.html since the parent container is already set to d-flex
+Commit 2
+"Issue 1 - Oct 1 / Paul / Removed float-right line 92 of index.html Removed d-flex class from line 28 of index.html since the parent container is already set to d-flex"
+
+Commit 3
+"Issue 1 - Paul - Found https://developers.google.com/web/updates/2016/12/url-bar-resizing and https://dev.to/peiche/100vh-behavior-on-chrome-2hm8 added @supports on body line 34-40 of style.css"
+
+
+
+
+
 
 */
 
@@ -23,6 +30,14 @@ body, wrapper {
     min-height: 100vh;
     background-image: url(../images/gaming-pattern.png)
 }
+
+body {
+    @supports (-webkit-appearance:none) {
+      .os-android & {
+        min-height: calc(100vh - 56px);
+      }
+    }
+  }
 
 footer {
     text-align: center;
