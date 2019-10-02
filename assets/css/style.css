@@ -27,13 +27,15 @@ Commit 5
 Commit 6
 "Issue 1 - Paul - Removing change from last commit, adding a fix with JS from https://css-tricks.com/the-trick-to-viewport-units-on-mobile/ and commented out the min-height 100vh"
 
+Commit 7
+"Commenting out last commit and moving over to new repo as I will submit assignment like this"
 
 */
 
 
 body, wrapper {
     min-height: 100vh;
-    min-height: calc(var(--vh, 1vh) * 100);
+    /* min-height: calc(var(--vh, 1vh) * 100); */
     background-image: url(../images/gaming-pattern.png);
 }
 
