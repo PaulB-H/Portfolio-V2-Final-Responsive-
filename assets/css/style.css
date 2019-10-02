@@ -34,8 +34,10 @@ Commit 8
 "Issue 1 Resolved - Implementing JS fix proved to work from https://github.com/PaulB-H/Portfolio---Fixing-100vh-on-mobile, ensured each html page has correct link to new JS file, previously attempted this fix but I did not give GitHub enough time to update the page before checking it on my phone - Need better way to live-test pages on phone"
 
 Commit 9
-"Removing mt-4 from Portfolio header, added style="padding-top: 10px;" inline to keep spacing consistant with other pages, will work towards proper global styling between pages"
+"Removing mt-4 from Portfolio header, added style padding top 10px inline to keep spacing consistant with other pages, will work towards proper global styling between pages"
 
+Commit 10
+"added stylepaddingtop 0px to contact page to match portfolio"
 
 */
 
